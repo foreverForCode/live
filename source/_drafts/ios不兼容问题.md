@@ -19,7 +19,7 @@ date: 2021-06-17 10:55:08
 
 解决方法: 在容器组件添加以下样式
 
-```css
+```
 .container{
     overflow:hidden;
     border-radius:10px;
