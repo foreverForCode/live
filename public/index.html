@@ -146,6 +146,76 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/live/2021/06/17/ios%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/live/images/avatar.gif">
+      <meta itemprop="name" content="jorden">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="freewm">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/live/2021/06/17/ios%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">ios不兼容问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-17 10:55:08 / 修改时间：11:51:53" itemprop="dateCreated datePublished" datetime="2021-06-17T10:55:08+08:00">2021-06-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="iso不兼容集合"><a href="#iso不兼容集合" class="headerlink" title="iso不兼容集合"></a>iso不兼容集合</h2><blockquote>
+<p>在开发微信小程序时，很多在安卓手机没有问题的样式问题，在IOS中都会有不兼容的细节问题</p>
+</blockquote>
+<h3 id="为什么安卓和IOS在微信小程序不兼容"><a href="#为什么安卓和IOS在微信小程序不兼容" class="headerlink" title="为什么安卓和IOS在微信小程序不兼容"></a>为什么安卓和IOS在微信小程序不兼容</h3><p>在微信开发者工具和安卓中，浏览器都是使用chrome内核的，但是在IOS中浏览器使用的是safari，chrome和safari内核不一致，chrome由于是一个独立项目，更新很快，在css中功能更强，所以在微信开发者工具和安卓上表现是一致。</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><h4 id="1-overflow：hidden，border-radius设置对里层样式不生效"><a href="#1-overflow：hidden，border-radius设置对里层样式不生效" class="headerlink" title="1 overflow：hidden，border-radius设置对里层样式不生效"></a>1 overflow：hidden，border-radius设置对里层样式不生效</h4><p>解决方法: 在容器组件添加以下样式</p>
+<pre class="line-numbers language-none"><code class="language-none">.container&#123;
+    overflow:hidden;
+    border-radius:10px;
+    position:relative;
+    z-index:1
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/live/2021/05/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -278,9 +348,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/live/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
